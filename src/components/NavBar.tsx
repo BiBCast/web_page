@@ -1,26 +1,37 @@
 import logo from '../assets/icon.svg'
-export function NavBar(){
-      return (
-
-              <nav className="nav-bar">
-                  <div className="nav-bar-logo">
-                    <img src={logo} />
-                  </div>
-                  <div className="nav-bar-links">
-                    <ul>
-                      <li ><a href="#">Search</a></li>
-                      <li ><a href="#">Social</a></li>
-                      <li ><a href="#">Forum</a></li>
-                    </ul>
-                  </div>
-                  <div className="nav-bar-links nav-bar-sign">
-                    <ul>
-                      <li ><a href="#">Sign up</a></li>
-                      <li className="login-button" ><a href="#" >Login</a></li>
-                    </ul>
-                  </div>
-                
-              </nav>
-
-      );
-  }
+export function NavBar () {
+  return (
+    <header>
+      <section>
+        <div className='nav-bar-links'>
+          <div className='logo'>
+            <img src={logo} />
+          </div>
+          <nav className='nav-bar'>
+            <ul>
+              <li>
+                <a href='#'>Search</a>
+              </li>
+              <li>
+                <a href='#'>Social</a>
+              </li>
+              <li>
+                <a href='#'>Forum</a>
+              </li>
+            </ul>
+            <div className='special-button'>
+              <ul>
+                <li>
+                  <a href='#'>Sign up</a>
+                </li>
+                <li>
+                  <a href='#'>Log in</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+  )
+}
