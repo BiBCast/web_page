@@ -15,6 +15,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -69,16 +70,46 @@ section {
   cursor: pointer;
 }
 
-.nav-bar-links .special-button a {
+.special-button {
+  width: 300px;
+}
+
+.special-button ul {
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  /* width: 100%; */
+  /* flex-direction: row;
+  gap: 2rem;
+  padding: 2rem; */
+}
+
+.special-button li {
+  width: 100%;
+  text-align: center;
+  right: 2rem;
+  /* margin: 300px; */
+  /*  top: 0;
+  left: 0; */
+
+  position: absolute;
+  /* ma: 2rem; */
+}
+
+.special-button a,
+li:hover {
+  /*  position: absolute; */
   background-color: #3577ff;
   border-radius: 5px;
-  transition: box-shadow 0.6s ease, transform 0.2s ease-in-out;
+  transition: all 1s;
   box-shadow: 0 0 0 rgba(8, 150, 230, 0.6);
   color: white;
-  padding: 1rem;
+  width: 100%;
 }
-.nav-bar-links .special-button a:hover {
+.special-button a:hover {
   color: red;
+  transform: translateY(2);
+  /* font-size: 1.2rem; */
 }
 /* .nav-bar-links .nav-bar ul{
     display: flex;
