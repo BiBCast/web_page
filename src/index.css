@@ -237,9 +237,17 @@ section {
   padding-right: 0.5rem;
 }
 
-.tooltip-parent::before {
+.tooltip::before {
+  width: 0;
+  height: 0;
   content: "";
-  width: 20px;
-  background: red;
+  z-index: 2;
+  border-bottom: 0.6rem solid currentColor;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  bottom: 100%;
+  transform: scale(1.01);
+  left: 20%;
+  color: rgb(var(--color-background-100));
   position: absolute;
 }
