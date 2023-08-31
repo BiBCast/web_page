@@ -83,7 +83,7 @@ section {
   height: 100%;
 }
 
-.conteiner-navbar .logo img {
+.conteiner-navbar img {
   max-width: 100%;
   width: 6rem;
   height: auto;
@@ -195,4 +195,35 @@ section {
   padding-right: 2rem;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.tooltip-footer {
+  background: rgb(var(--color-background-200));
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding-left: 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tooltip-footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: fle;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tooltip-footer div > div {
+  width: 100%;
+  text-align: left;
+}
+
+.tooltip-footer img {
+  max-width: 100%;
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+  padding-right: 0.5rem;
 }
