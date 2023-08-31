@@ -1,5 +1,9 @@
 import PlayButton from "../assets/play-button.png";
 import Manga from "../assets/book.png";
+import Like from "../assets/like.png";
+import Star from "../assets/star.png";
+import Caracter from "../assets/man.png";
+import Staf from "../assets/men.png";
 export function Tooltip() {
   return (
     <div className="tooltip">
@@ -44,10 +48,26 @@ export function Tooltip() {
         </div>
       </div>
       <div className="tooltip-footer">
-        <a href="#">footer</a>
-        <a href="#">footer</a>
-        <a href="#">footer</a>
-        <a href="#">footer</a>
+        <div>
+          <div>
+            <img src={Staf} alt="Logo" />
+            <a href="#">Staff</a>
+          </div>
+          <div>
+            <img src={Caracter} alt="Logo" />
+            <a href="#">Caracter</a>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src={Star} alt="Logo" />
+            <a href="#">Reviews</a>
+          </div>
+          <div>
+            <img src={Like} alt="Logo" />
+            <a href="#">Raccomandations</a>
+          </div>
+        </div>
       </div>
     </div>
   );
