@@ -4,10 +4,10 @@ export function NavBar () {
     <header>
       <section>
         <div className='nav-bar-links'>
-          <div className='logo'>
-            <img src={logo} />
-          </div>
           <nav className='nav-bar'>
+            <div className='logo'>
+              <img src={logo} />
+            </div>
             <ul>
               <li>
                 <a href='#'>Search</a>
@@ -19,12 +19,12 @@ export function NavBar () {
                 <a href='#'>Forum</a>
               </li>
             </ul>
-            <div className='special-button'>
+            <div className='special-container'>
               <ul>
-                <li>
+                <li className='special-button'>
                   <a href='#'>Sign up</a>
                 </li>
-                <li>
+                <li className='special-button'>
                   <a href='#'>Log in</a>
                 </li>
               </ul>

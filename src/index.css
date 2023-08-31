@@ -12,11 +12,22 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 section {
@@ -24,14 +35,23 @@ section {
   top: 0;
   right: 0;
   background-color: var(--background-color);
+
   width: 100%;
+  height: 15%;
 }
 .nav-bar {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
+
+.nav-bar > * {
+  width: 33.3333%;
+  display: flex;
+  justify-content: center;
+}
+
 .nav-bar a {
   color: var(--text);
   transition: 0.4s;
@@ -41,17 +61,16 @@ section {
 .nav-bar a:hover {
   color: var(--text-hover);
 }
-.nav-bar ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
+
+.nav-bar > ul {
+  gap: 1.5rem;
 }
+
 .nav-bar-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 /* .nav-bar-links .logo{
@@ -59,10 +78,7 @@ section {
    width: 100px;
    height: ;
 } */
-.nav-bar-links .logo {
-  position: relative;
-  padding-left: 100px;
-}
+
 .nav-bar-links .logo img {
   max-width: 100%;
   width: 6rem;
@@ -70,35 +86,37 @@ section {
   cursor: pointer;
 }
 
-.special-button {
-  width: 300px;
-}
-
-.special-button ul {
-  justify-content: start;
-  align-items: center;
+.special-container {
   position: relative;
-  /* width: 100%; */
-  /* flex-direction: row;
-  gap: 2rem;
-  padding: 2rem; */
+
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.special-button li {
+.special-container ul {
   width: 100%;
-  text-align: center;
-  right: 2rem;
-  /* margin: 300px; */
-  /*  top: 0;
-  left: 0; */
-
   position: absolute;
-  /* ma: 2rem; */
+  display: flex;
+  gap: 1rem;
 }
 
+.special-button {
+  transition: all 0.25s ease-in-out;
+  padding: 1rem;
+}
+.special-button:hover {
+  background-color: #3577ff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(8, 150, 230, 0.6);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* 
 .special-button a,
 li:hover {
-  /*  position: absolute; */
+  position: absolute;
   background-color: #3577ff;
   border-radius: 5px;
   transition: all 1s;
@@ -108,9 +126,10 @@ li:hover {
 }
 .special-button a:hover {
   color: red;
-  transform: translateY(2);
-  /* font-size: 1.2rem; */
-}
+  transform: scale(1.5);
+   font-size: 1.2rem; 
+} 
+*/
 /* .nav-bar-links .nav-bar ul{
     display: flex;
     justify-content: center;
