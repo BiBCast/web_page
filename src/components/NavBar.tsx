@@ -1,4 +1,4 @@
-import logo from "../assets/icon.svg";
+import Logo from "../assets/icon.svg";
 import { Tooltip } from "./Tooltip";
 export function NavBar() {
   return (
@@ -7,7 +7,7 @@ export function NavBar() {
         <div className="conteiner-navbar">
           <nav className="nav-bar">
             <div className="logo">
-              <img src={logo} alt="Logo" />
+              <img src={Logo} alt="Logo" />
             </div>
             <ul>
               <li>
