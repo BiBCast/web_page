@@ -15,7 +15,11 @@ export function Tooltip() {
           <div className="tooltip-section">
             <a href="#">Anime</a>
             <div>
-              <a className="tooltip-secondary-link" href="#">
+              <a
+                className="tooltip-secondary-l
+              ink"
+                href="#"
+              >
                 Top 100
               </a>
               <a className="tooltip-secondary-link" href="#">
