@@ -379,7 +379,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-transform: capitalize;
-  & div {
+  & > div {
     margin-top: 1rem;
   }
 }
@@ -390,14 +390,34 @@ header {
   box-shadow: 0 14px 30px rgba(var(--color-shadow-blue), 0.1),
     0 4px 4px rgba(var(--color-shadow-blue), 0.04);
 
-  height: 2.3em;
-  width: 11em;
+  height: 3.8rem;
+  width: 19rem;
+}
 
-  /* display: flex;
+.input-container {
+  height: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; */
-  /* & > div {
+  align-items: center;
+  gap: 1rem;
+
+  & * {
     height: 100%;
-  } */
+  }
+
+  & > :not(.focus) {
+    padding-left: 2rem;
+  }
+  & path {
+    filter: brightness(90%);
+  }
+  & svg {
+    color: rgb(var(--color-background-200));
+    stroke-width: 1;
+  }
+}
+
+.focus {
+  overflow: scroll;
 }
