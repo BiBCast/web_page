@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities; */
 /* NAVBAR */
+/* TODO: include in different div logo and the menu items(plus the special) and refactor css accordingly   */
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --color-background: 237, 241, 245;
@@ -226,6 +227,20 @@ header {
   flex-direction: column;
   z-index: 999;
   text-transform: capitalize;
+
+  &::before {
+    width: 0;
+    height: 0;
+    content: "";
+    border-bottom: 0.6rem solid currentColor;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    bottom: 100%;
+    transform: scale(1.1);
+    left: 20%;
+    color: rgb(var(--color-background-100));
+    position: absolute;
+  }
 }
 
 .tooltip-parent:hover .tooltip {
@@ -290,6 +305,19 @@ header {
   padding-left: 1.4rem;
   font-size: 1rem;
   font-weight: 600;
+
+  & div {
+    & > div {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      color: rgb(var(--color-gray-900));
+      font-weight: 600;
+    }
+  }
 }
 
 .tooltip-footer > div {
@@ -299,70 +327,51 @@ header {
   align-items: center;
 }
 
-.tooltip-footer div > div {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  color: rgb(var(--color-gray-900));
-  font-weight: 600;
-}
-
-.tooltip-footer img {
-  max-width: 100%;
-  width: 2rem;
-  height: auto;
-  cursor: pointer;
-  padding-right: 0.5rem;
-}
-
-.tooltip::before {
-  width: 0;
-  height: 0;
-  content: "";
-  border-bottom: 0.6rem solid currentColor;
-  border-left: 0.4rem solid transparent;
-  border-right: 0.4rem solid transparent;
-  bottom: 100%;
-  transform: scale(1.1);
-  left: 20%;
-  color: rgb(var(--color-background-100));
-  position: absolute;
+.tooltip-footer {
+  & img {
+    max-width: 100%;
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+    padding-right: 0.5rem;
+  }
 }
 
 /* FilterShow */
-.filtershow-main {
+.filtershow {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
   margin-left: 15%;
 }
-.filtershow-main > span {
+.filtershow > span {
   font-size: 2.8rem;
   font-weight: 800;
   color: rgb(var(--color-gray-800));
   text-align: start;
   text-transform: capitalize;
 }
-.filtershow-main-container {
+.filtershow-container {
   display: flex;
   justify-content: flex-start;
   gap: 5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(var(--color-gray-900));
+  margin-top: 5rem;
 }
-.filtershow-main-container > div {
+.filtershow-items {
   display: flex;
   flex-direction: row;
   gap: 15rem;
 }
-.filtershow-element-container {
+.filtershow-element {
   display: flex;
   font-size: 1.6rem;
   flex-direction: column;
   align-items: center;
   text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgb(var(--color-gray-900));
+  & div {
+    margin-top: 1rem;
+  }
 }

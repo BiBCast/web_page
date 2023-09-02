@@ -1,37 +1,40 @@
-import { SearchButton } from "./SearchButton";
+import { Input } from "./Input";
+import { ComboBox } from "./ComboBox";
+import { Select } from "./Select";
+import { Button } from "./Button";
 export function FilterShow() {
   return (
     <>
-      <div className="filtershow-main">
+      <div className="filtershow">
         <span>top 100 anime</span>
-        <div className="filtershow-main-container">
-          <div>
-            <div className="filtershow-element-container">
+        <div className="filtershow-container">
+          <div className="filtershow-items">
+            <div className="filtershow-element">
               <span>search</span>
-              <SearchButton />
+              <Input />
             </div>
-            <div className="filtershow-element-container">
+            <div className="filtershow-element">
               <span>genres</span>
-              <SearchButton />
+              <ComboBox />
             </div>
-            <div className="filtershow-element-container">
+            <div className="filtershow-element">
               <span>year</span>
-              <SearchButton />
+              <ComboBox />
             </div>
-            <div className="filtershow-element-container">
+            <div className="filtershow-element">
               <span>season</span>
-              <SearchButton />
+              <Select />
             </div>
-            <div className="filtershow-element-container">
+            <div className="filtershow-element">
               <span>format</span>
-              <SearchButton />
+              <Select />
             </div>
-            <div className="filtershow-element-container">
+            <div className="filtershow-element">
               <span>airing status</span>
-              <SearchButton />
+              <Select />
             </div>
           </div>
-          <div className="filtershow-element-container">Button</div>
+          <Button />
         </div>
       </div>
     </>
