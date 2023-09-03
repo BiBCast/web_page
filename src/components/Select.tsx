@@ -1,7 +1,11 @@
 export function Select() {
   return (
     <>
-      <div>Select</div>
+      <div className="input">
+        <div className="input-container">
+          <input type="search" className="focus select" placeholder="Any" />
+        </div>
+      </div>
     </>
   );
 }
