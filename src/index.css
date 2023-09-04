@@ -3,7 +3,7 @@
 @tailwind utilities; */
 /* NAVBAR */
 /* TODO: include in different div logo and the menu items(plus the special) and refactor css accordingly   */
-@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --color-background: 237, 241, 245;
   --color-foreground: 250, 250, 250;
@@ -91,7 +91,7 @@ body {
   height: 100%;
   font-size: 62.5%;
   /* font-size: 1rem; */
-  font-family: "Overpass", "Poppins", sans-serif;
+  font-family: 'Overpass', 'Poppins', sans-serif;
   background: rgba(var(--color-background-200));
   color: var(--text);
 }
@@ -239,7 +239,7 @@ header {
   &::before {
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     border-bottom: 0.6rem solid currentColor;
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
@@ -350,19 +350,27 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
-  margin-left: 15%;
+  justify-content: center;
+  margin: 0 auto;
+  /*margin-inline: 2rem;
+  padding-inline: 2rem;*/
 }
-.filtershow > span {
+.filtershow > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.filtershow > div:has(span) {
   font-size: 2.8rem;
   font-weight: 800;
   color: rgb(var(--color-gray-800));
-  text-align: start;
   text-transform: capitalize;
 }
 .filtershow-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 5rem;
+  /*justify-content: center;*/
+  /* gap: 5rem; */
   font-size: 1.5rem;
   font-weight: 700;
   color: rgb(var(--color-gray-900));
@@ -371,7 +379,7 @@ header {
 .filtershow-items {
   display: flex;
   flex-direction: row;
-  gap: 15rem;
+  /* gap: 15rem; */
 }
 .filtershow-element {
   display: flex;
@@ -380,7 +388,7 @@ header {
   align-items: center;
   text-transform: capitalize;
   & > div {
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
 }
 .input {
@@ -418,7 +426,8 @@ header {
     stroke-width: 1;
   }
   & :nth-child(1) {
-    margin-left: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
   /*  & .select {
     margin-left: 1rem;
