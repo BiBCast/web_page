@@ -1,3 +1,5 @@
+import { SearchOptions } from './SearchOptions'
+
 export function Select () {
   return (
     <>
@@ -10,6 +12,7 @@ export function Select () {
             readOnly
           />
         </div>
+        <SearchOptions />
       </div>
     </>
   )
