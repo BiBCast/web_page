@@ -500,3 +500,32 @@ header {
 .search-options-title {
   padding-left: 0;
 }
+
+.options-button {
+  position: relative;
+  width: 30px;
+
+  &:focus-within .opt-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.opt-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 130%;
+  right: -10%;
+  width: 80rem;
+  height: 20rem;
+  background-color: rgb(var(--color-background-100));
+  background: rgb(var(--color-background-100));
+  box-shadow: 0 14px 30px rgba(var(--color-shadow-blue), 0.25),
+    0 4px 4px rgba(var(--color-shadow-blue), 0.15);
+  color: rgb(var(--color-gray-600));
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: opacity 0.3s, visibility 0.3s ease-in-out;
+}

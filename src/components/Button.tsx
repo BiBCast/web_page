@@ -1,7 +1,9 @@
+import { SearchOptionsButton } from './SearchOptionsButton'
+
 export function Button () {
   return (
     <>
-      <div className='input options-button'>
+      <div className='input options-button' tabIndex='-1'>
         <div>
           <svg
             aria-hidden='true'
@@ -18,6 +20,7 @@ export function Button () {
             ></path>
           </svg>
         </div>
+        <SearchOptionsButton />
       </div>
     </>
   )
