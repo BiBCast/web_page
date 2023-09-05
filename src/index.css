@@ -457,6 +457,7 @@ header {
   overflow: visible;
   color: rgb(var(--color-gray-700));
   font-weight: 500;
+  width: 100%;
 }
 
 .options-button {
@@ -470,6 +471,32 @@ header {
   }
 }
 
-.input:focus-within {
-  background-color: red;
+.input:focus-within > .search-options {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search-options {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 3rem;
+  background: white;
+  width: 15rem;
+  border-radius: 6px;
+  background: rgb(var(--color-background-100));
+  box-shadow: 0 14px 30px rgba(var(--color-shadow-blue), 0.1),
+    0 4px 4px rgba(var(--color-shadow-blue), 0.04);
+}
+.search-options-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.search-options-wrapper > div:not(.search-options-title) {
+  padding-left: 0.5rem;
+}
+.search-options-title {
+  padding-left: 0;
 }
