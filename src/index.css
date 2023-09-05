@@ -200,7 +200,7 @@ header {
   color: white;
 }
 .special-button:hover {
-  background-color: var(--button-backgroud);
+  background-color: #3577ff;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(var(--shadow-box));
   color: var(--text-hover);
@@ -409,6 +409,18 @@ header {
   width: 15rem;
 }
 
+.glass-icon {
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  & * {
+    height: 100%;
+  }
+  & svg {
+    height: 1rem;
+  }
+}
+
 .input-container {
   height: 100%;
   display: flex;
@@ -456,4 +468,8 @@ header {
   & svg {
     width: 100%;
   }
+}
+
+.input:focus-within {
+  background-color: red;
 }

@@ -3,9 +3,12 @@ export function Select () {
     <>
       <div className='input'>
         <div className='input-container'>
-          <div>
-            <span>Any</span>
-          </div>
+          <input
+            type='search'
+            className='focus select'
+            placeholder=''
+            readOnly
+          />
         </div>
       </div>
     </>

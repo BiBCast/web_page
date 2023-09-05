@@ -3,13 +3,11 @@ export function Input () {
     <>
       <div className='input'>
         <div className='input-container'>
-          <div>
+          <div className='glass-icon'>
             <svg
               viewBox='0 0 512 512'
               stroke='currentColor'
               fill='currentColor'
-              height='0.9em'
-              width='2.5rem'
             >
               <path
                 fill='currentColor'
