@@ -1,13 +1,13 @@
-import { FilterShow } from "./components/FilterShow";
-import { NavBar } from "./components/NavBar";
+import { FilterShow } from './components/FilterShow'
+import { NavBar } from './components/NavBar'
 
-function App() {
+function App () {
   return (
     <>
       <NavBar />
       <FilterShow />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
