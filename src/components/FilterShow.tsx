@@ -32,10 +32,6 @@ export function FilterShow () {
                 <span>format</span>
                 <Select />
               </div>
-              <div className='filtershow-element'>
-                <span>airing status</span>
-                <Select />
-              </div>
             </div>
             <Button />
           </div>
