@@ -8,7 +8,7 @@ export function Select () {
           <input
             type='search'
             className='focus select'
-            placeholder=''
+            placeholder='Any'
             readOnly
           />
         </div>
