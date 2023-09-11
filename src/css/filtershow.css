@@ -131,7 +131,8 @@
 
 .search-options {
   opacity: 0;
-  position: absolute;
+  position: sticky;
+  margin-top: 1rem;
   visibility: hidden;
   /*margin-top: 3rem;*/
   top: 23rem;
@@ -176,9 +177,18 @@
   background: rgb(var(--color-background-100));
   box-shadow: 0 14px 30px rgba(var(--color-shadow-blue), 0.25),
     0 4px 4px rgba(var(--color-shadow-blue), 0.15);
-  color: rgb(var(--color-gray-600));
-  font-size: 1.1rem;
-  font-weight: 600;
   border-radius: 6px;
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
+
+  & .state-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    & > div {
+      border: 0.5px solid black;
+    }
+  }
 }

@@ -3,7 +3,8 @@ export function SearchOptionsButton () {
   return (
     <>
       <div className='opt-menu'>
-        <div>
+        <div className='state-show'>
+          <Select />
           <Select />
           <Select />
           <Select />
