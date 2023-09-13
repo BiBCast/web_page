@@ -131,6 +131,7 @@
 
 .search-options {
   opacity: 0;
+  z-index: 5;
   position: sticky;
   margin-top: 1rem;
   visibility: hidden;
@@ -179,16 +180,4 @@
     0 4px 4px rgba(var(--color-shadow-blue), 0.15);
   border-radius: 6px;
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
-
-  & .state-show {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding-top: 2rem;
-    & > div {
-      border: 0.5px solid black;
-    }
-  }
 }
